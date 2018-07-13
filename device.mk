@@ -29,6 +29,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     camera.msm8937
 
+#apn    
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/apn/apns-conf.xml:system/etc/apns-conf.xml 
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/keylayout/ist30xx_ts_input.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ist30xx_ts_input.kl \
